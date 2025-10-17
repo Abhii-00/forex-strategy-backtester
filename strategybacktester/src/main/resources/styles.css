@@ -1,0 +1,100 @@
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-accent: #007acc;
+}
+
+.label {
+    -fx-text-fill: #f0f0f0; /* CHANGED: Brighter text for all labels */
+}
+
+.text-area, .text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: #777777;
+    -fx-border-color: #444444;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-transition: -fx-background-color 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.date-picker, .combo-box {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #444444;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.date-picker .arrow-button, .combo-box .arrow-button {
+    -fx-background-color: #333333;
+    -fx-background-radius: 0 5 5 0;
+}
+
+/* Chart Styles */
+.chart { -fx-background-color: #1e1e1e; }
+.chart-title { -fx-text-fill: #f0f0f0; } /* CHANGED: Brighter title */
+.axis-label { -fx-text-fill: #f0f0f0; }
+.axis {
+    -fx-tick-label-fill: #cccccc;
+    -fx-border-color: #444444;
+}
+.chart-plot-background { -fx-background-color: #2a2a2a; }
+.chart-vertical-grid-lines { -fx-stroke: transparent; }
+.chart-horizontal-grid-lines { -fx-stroke: transparent; }
+
+/* ComboBox List Styles */
+.combo-box .list-view { -fx-background-color: #2a2a2a; }
+.combo-box .list-cell { -fx-text-fill: #444444; }
+
+/* TableView Styles for Results Area */
+.table-view {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #444444;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1e1e1e;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* CHANGED: Pure white for column titles */
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #1e1e1e; /* CHANGED: Dark grey text color */
+    -fx-border-color: transparent;
+}
+
+/* Style for selected rows in the results table */
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #383838;
+}
+
+.table-view .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+/* Specific style for the Strategy Code TextArea */
+/* Specific style for the Strategy Code TextArea */
+.strategy-code-area .content {
+    /* We remove the background definition to let the system's light background show through */
+}
+
+.strategy-code-area {
+    -fx-text-fill: black; /* FORCES DARK TEXT */
+    -fx-highlight-fill: #007acc;
+    -fx-highlight-text-fill: white;
+    -fx-control-inner-background: white; /* Ensures the inner area is white */
+}
